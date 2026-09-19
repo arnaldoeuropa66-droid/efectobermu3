@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow1" cx="75%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="10%" cy="80%" r="45%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1200" height="630" fill="#080808"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Líneas decorativas verticales -->
+  <line x1="80" y1="60" x2="80" y2="570" stroke="#c9a84c" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="1120" y1="60" x2="1120" y2="570" stroke="#c9a84c" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Eyebrow (etiqueta superior) -->
+  <text x="600" y="170"
+        font-family="Montserrat, sans-serif"
+        font-size="16"
+        font-weight="400"
+        letter-spacing="8"
+        fill="#c9a84c"
+        text-anchor="middle">DISEÑO Y DESARROLLO WEB</text>
+
+  <!-- Título principal: Efecto -->
+  <text x="600" y="310"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="140"
+        font-weight="300"
+        fill="#f5f0e8"
+        text-anchor="middle"
+        letter-spacing="-2">Efecto</text>
+
+  <!-- Título principal: Bermu (dorado, italic) -->
+  <text x="600" y="430"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="140"
+        font-weight="300"
+        font-style="italic"
+        fill="#c9a84c"
+        text-anchor="middle"
+        letter-spacing="-2">Bermu</text>
+
+  <!-- Línea decorativa -->
+  <line x1="480" y1="480" x2="720" y2="480" stroke="#c9a84c" stroke-opacity="0.4" stroke-width="1"/>
+
+  <!-- Subtítulo con servicios -->
+  <text x="600" y="525"
+        font-family="Montserrat, sans-serif"
+        font-size="18"
+        font-weight="300"
+        letter-spacing="4"
+        fill="#a8a091"
+        text-anchor="middle">Páginas web · Estructura · SEO</text>
+
+  <!-- Servicio secundario -->
+  <text x="600" y="562"
+        font-family="Montserrat, sans-serif"
+        font-size="14"
+        font-weight="300"
+        letter-spacing="6"
+        fill="#c9a84c"
+        fill-opacity="0.65"
+        text-anchor="middle">+ EDICIÓN DE VIDEO OPCIONAL</text>
+
+  <!-- Marca de agua esquina inferior derecha -->
+  <text x="1120" y="590"
+        font-family="Montserrat, sans-serif"
+        font-size="12"
+        font-weight="300"
+        letter-spacing="3"
+        fill="#c9a84c"
+        fill-opacity="0.5"
+        text-anchor="end">efectobermu.com</text>
+
+  <!-- Detalle esquina superior izquierda: diamante -->
+  <polygon points="80,40 88,48 80,56 72,48" fill="#c9a84c" fill-opacity="0.6"/>
+</svg>
