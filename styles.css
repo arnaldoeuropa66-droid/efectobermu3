@@ -1068,3 +1068,52 @@ footer{
 @media (max-height:700px) and (min-width:1001px){
   .hero{min-height:auto;padding:120px 60px 80px}
 }
+/* ==========================================================================
+   FIX: forzar footer al final del body
+   ========================================================================== */
+body > footer {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 36px 60px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 24px !important;
+  flex-wrap: wrap !important;
+  border-top: 1px solid rgba(201,168,76,.08) !important;
+  background: var(--black) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  order: 9999 !important;
+}
+
+body > footer .foot-legal {
+  display: flex !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important;
+  position: static !important;
+}
+
+body > footer .foot-legal a {
+  font-size: .65rem !important;
+  letter-spacing: .15em !important;
+  text-transform: uppercase !important;
+  color: var(--muted) !important;
+  text-decoration: none !important;
+  position: static !important;
+}
+
+/* En móvil */
+@media (max-width: 1000px) {
+  body > footer {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 32px 24px !important;
+    gap: 20px !important;
+  }
+  body > footer .foot-legal {
+    justify-content: center !important;
+  }
+}
