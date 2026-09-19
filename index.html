@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>Efecto Bermu — Editor de Video para TikTok, Reels y Shorts</title>
+  <meta name="description" content="Editor de video profesional especializado en TikTok, Instagram Reels y YouTube Shorts. Subtítulos animados, cortes dinámicos y estilo viral. Cada segundo cuenta."/>
+  <meta name="author" content="Efecto Bermu"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://efectobermu.com/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Efecto Bermu — Editor de Video"/>
+  <meta property="og:description" content="Edición profesional para TikTok, Reels y YouTube Shorts. Cada segundo cuenta."/>
+  <meta property="og:image" content="https://efectobermu.com/og-image.jpg"/>
+  <meta property="og:url" content="https://efectobermu.com/"/>
+  <meta property="og:site_name" content="Efecto Bermu"/>
+  <meta property="og:locale" content="es_ES"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Efecto Bermu — Editor de Video"/>
+  <meta name="twitter:description" content="Edición profesional para TikTok, Reels y YouTube Shorts."/>
+  <meta name="twitter:image" content="https://efectobermu.com/og-image.jpg"/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <meta name="theme-color" content="#080808"/>
+
+  <!-- Fuentes auto-hospedadas -->
+  <link rel="preload" href="/fonts/cormorant-garamond-300.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="/fonts/cormorant-garamond-400.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="/fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="stylesheet" href="/styles.css"/>
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Efecto Bermu",
+    "description": "Editor de video profesional especializado en TikTok, Instagram Reels y YouTube Shorts.",
+    "url": "https://efectobermu.com",
+    "image": "https://efectobermu.com/og-image.jpg",
+    "areaServed": "ES",
+    "serviceType": "Video Editing",
+    "priceRange": "€€",
+    "email": "hola@efectobermu.com",
+    "sameAs": [
+      "https://instagram.com/efectobermu"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" id="cring" aria-hidden="true"></div>
+
+<a href="#inicio" class="skip-link">Saltar al contenido principal</a>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Navegación principal">
+  <a href="#inicio" class="nav-logo" aria-label="Efecto Bermu, ir al inicio">
+    <img src="/logo.webp" alt="Efecto Bermu" width="120" height="44"/>
+  </a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#precios">Precios</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contacto" class="nav-cta">Trabajemos</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-line-l" aria-hidden="true"></div>
+  <div class="hero-line-r" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Editor de Video Profesional</p>
+      <h1 class="hero-title">Efecto<br><em>Bermu</em></h1>
+      <p class="hero-tagline">Donde cada segundo cuenta</p>
+      <p class="hero-desc">Convierte tus ideas en videos que captan atención y <strong>venden</strong>. Edición profesional para TikTok, Reels y YouTube Shorts. Videos con ritmo, estilo y optimizados para que el algoritmo trabaje a tu favor.</p>
+      <div class="hero-btns">
+        <a href="#contacto" class="btn-gold">Solicitar edición</a>
+        <a href="#portafolio" class="btn-outline">Ver ejemplos</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-logo-frame">
+        <img class="hero-logo-img" src="/logo.webp" alt="Efecto Bermu Logo" width="260" height="260"/>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="dot"></span>TikTok &amp; Reels</div>
+    <div class="marquee-item"><span class="dot"></span>Subtítulos Animados</div>
+    <div class="marquee-item"><span class="dot"></span>YouTube Shorts</div>
+    <div class="marquee-item"><span class="dot"></span>Cortes Dinámicos</div>
+    <div class="marquee-item"><span class="dot"></span>Efectos Tendencia</div>
+    <div class="marquee-item"><span class="dot"></span>Publicidad Comercial</div>
+    <div class="marquee-item"><span class="dot"></span>Color Grading</div>
+    <div class="marquee-item"><span class="dot"></span>TikTok &amp; Reels</div>
+    <div class="marquee-item"><span class="dot"></span>Subtítulos Animados</div>
+    <div class="marquee-item"><span class="dot"></span>YouTube Shorts</div>
+    <div class="marquee-item"><span class="dot"></span>Cortes Dinámicos</div>
+    <div class="marquee-item"><span class="dot"></span>Efectos Tendencia</div>
+    <div class="marquee-item"><span class="dot"></span>Publicidad Comercial</div>
+    <div class="marquee-item"><span class="dot"></span>Color Grading</div>
+  </div>
+</div>
+
+<!-- SOBRE MÍ -->
+<section class="section" id="sobre-mi">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="sec-label">Sobre mí</span>
+        <h2 class="sec-title">Editor de video <em>freelance</em> con foco en resultados</h2>
+        <p>Me especializo en contenido corto para redes sociales porque creo que <strong>los primeros 3 segundos lo son todo</strong>. Llevo años trabajando con creadores, marcas personales y pequeños negocios que quieren presencia real en TikTok, Instagram y YouTube.</p>
+        <p>Mi estilo: dinámico, directo y siempre orientado a retención. No edito para que el video se vea bien, edito para que <strong>funcione</strong>.</p>
+        <div class="about-bullets">
+          <div class="about-bullet">Experto en subtítulos animados estilo viral</div>
+          <div class="about-bullet">Adaptación de largo a corto sin perder el mensaje</div>
+          <div class="about-bullet">Respuesta rápida y entregas en plazo</div>
+          <div class="about-bullet">Trabajo desde cualquier lugar, me implico en cada proyecto como si fuera mío</div>
+        </div>
+        <div class="about-stats">
+          <div><div class="stat-n">+200</div><div class="stat-l">Proyectos</div></div>
+          <div><div class="stat-n">+50</div><div class="stat-l">Clientes</div></div>
+          <div><div class="stat-n">5+</div><div class="stat-l">Años</div></div>
+        </div>
+      </div>
+      <div class="about-img-frame reveal">
+        <div class="about-img-placeholder">
+          <img class="about-img2" src="/logo.webp" alt="Efecto Bermu" width="400" height="500"/>
+        </div>
+        <div class="frame-corner-tr" aria-hidden="true"></div>
+        <div class="frame-corner-bl" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="section benefits" id="beneficios">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Beneficios</span>
+      <h2 class="sec-title">Lo que ganas cuando <em>delegas la edición</em></h2>
+    </div>
+    <div class="benefits-nums">
+      <div class="reveal reveal-d1">
+        <div class="ben-num">3x</div>
+        <div class="ben-title">Mayor retención</div>
+        <div class="ben-desc">Videos editados profesionalmente retienen hasta 3 veces más audiencia.</div>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="ben-num">80%</div>
+        <div class="ben-title">Ahorro de tiempo</div>
+        <div class="ben-desc">Dedica tu energía a crear, no a editar horas frente al ordenador.</div>
+      </div>
+      <div class="reveal reveal-d3">
+        <div class="ben-num">100%</div>
+        <div class="ben-title">Listo para publicar</div>
+        <div class="ben-desc">Entrega en el formato exacto que cada plataforma requiere.</div>
+      </div>
+    </div>
+    <div class="benefits-tagline reveal">
+      Un video bien editado no solo se ve mejor, <strong>trabaja para ti</strong>. Mejor imagen, más alcance, más clientes.
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Lo que hago</span>
+      <h2 class="sec-title">Todo lo que necesitas para <em>dominar las redes</em></h2>
+      <p class="sec-desc">Especializado en contenido corto de alto impacto. Cada video está diseñado para retener a tu audiencia desde el primer segundo.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc reveal reveal-d1">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <h3 class="svc-name">TikTok</h3>
+        <p class="svc-desc">Edición con ritmo rápido, cortes al beat y efectos tendencia para maximizar visualizaciones.</p>
+      </div>
+      <div class="svc reveal reveal-d2">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <h3 class="svc-name">Instagram Reels y Stories</h3>
+        <p class="svc-desc">Formato optimizado para el feed y para historias. Estilo visual coherente con tu marca personal.</p>
+      </div>
+      <div class="svc reveal reveal-d1">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <h3 class="svc-name">YouTube Shorts</h3>
+        <p class="svc-desc">Adaptación y edición de contenido vertical pensado para el algoritmo de YouTube.</p>
+      </div>
+      <div class="svc reveal reveal-d2">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+        <h3 class="svc-name">Subtítulos Animados</h3>
+        <p class="svc-desc">Subtítulos llamativos estilo viral que aumentan el tiempo de visualización y la accesibilidad.</p>
+      </div>
+      <div class="svc reveal reveal-d1">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M15 10l4.553-2.069A1 1 0 0121 8.87V15.13a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+        <h3 class="svc-name">Cortes Dinámicos y Zooms</h3>
+        <p class="svc-desc">Transiciones y zooms estratégicos que mantienen la atención y le dan energía al contenido.</p>
+      </div>
+      <div class="svc reveal reveal-d2">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        <h3 class="svc-name">Efectos y Sonidos Tendencia</h3>
+        <p class="svc-desc">Emojis, overlays, filtros y sonidos virales para que tu video conecte con las tendencias actuales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTAFOLIO -->
+<section class="section section-alt" id="portafolio">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Portafolio</span>
+      <h2 class="sec-title">Ejemplos de mi <em>trabajo</em></h2>
+      <p class="sec-desc">Cada proyecto está pensado para el cliente, la plataforma y el objetivo concreto. Estos son algunos formatos que domino:</p>
+    </div>
+    <div class="portfolio-grid">
+      <article class="port-item reveal reveal-d1">
+        <div class="port-bg port-bg-1">
+          <div class="port-bg-content">
+            <div class="port-emoji">📱</div>
+            <div class="port-brand">TikTok</div>
+            <div class="port-line"></div>
+            <div class="port-tag">Contenido Viral</div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">Contenido Viral TikTok</div>
+          <div class="port-desc">Edición al ritmo de la música, efectos tendencia y texto animado para máxima retención.</div>
+        </div>
+      </article>
+      <article class="port-item reveal reveal-d2">
+        <div class="port-bg port-bg-2">
+          <div class="port-bg-content">
+            <div class="port-emoji">🎞️</div>
+            <div class="port-brand">Instagram</div>
+            <div class="port-line"></div>
+            <div class="port-tag">Marca Personal</div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">Reels de Marca Personal</div>
+          <div class="port-desc">Estética cuidada, subtítulos y ritmo visual que refuerzan la identidad de marca.</div>
+        </div>
+      </article>
+      <article class="port-item reveal reveal-d3">
+        <div class="port-bg port-bg-3">
+          <div class="port-bg-content">
+            <div class="port-emoji">▶️</div>
+            <div class="port-brand">YouTube</div>
+            <div class="port-line"></div>
+            <div class="port-tag">Shorts Educativos</div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">YouTube Shorts Educativos</div>
+          <div class="port-desc">Adaptación de contenido largo a formato corto, conservando el mensaje clave con impacto.</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="section" id="proceso">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Cómo trabajo</span>
+      <h2 class="sec-title">Trabajar conmigo es <em>sencillo</em></h2>
+      <p class="sec-desc">Sin complicaciones ni procesos interminables. De tu material al video final en pocos pasos:</p>
+    </div>
+    <div class="process-steps">
+      <div class="pstep reveal reveal-d1">
+        <div class="pstep-num">I</div>
+        <h4 class="pstep-title">Envías el material</h4>
+        <p class="pstep-desc">Me mandas tus clips, referencias de estilo y detalles del objetivo del video.</p>
+      </div>
+      <div class="pstep reveal reveal-d2">
+        <div class="pstep-num">II</div>
+        <h4 class="pstep-title">Definimos estilo</h4>
+        <p class="pstep-desc">Hablamos brevemente para alinear el tono, el ritmo y los elementos visuales.</p>
+      </div>
+      <div class="pstep reveal reveal-d3">
+        <div class="pstep-num">III</div>
+        <h4 class="pstep-title">Edito la versión</h4>
+        <p class="pstep-desc">Trabajo en tu video con toda la atención al detalle que tu contenido merece.</p>
+      </div>
+      <div class="pstep reveal reveal-d1 step-d4">
+        <div class="pstep-num">IV</div>
+        <h4 class="pstep-title">Revisiones rápidas</h4>
+        <p class="pstep-desc">Recibes el video y puedes pedir ajustes. Respondo ágil para no perder tiempo.</p>
+      </div>
+      <div class="pstep reveal reveal-d2 step-d5">
+        <div class="pstep-num">V</div>
+        <h4 class="pstep-title">Entrega final</h4>
+        <p class="pstep-desc">Te envío el archivo en el formato y resolución óptimos para cada plataforma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="section pricing" id="precios">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Precios</span>
+      <h2 class="sec-title">Planes claros, sin <em>sorpresas</em></h2>
+      <p class="sec-desc">Elige el nivel que mejor se adapta a tu proyecto. ¿No encaja ninguno? Hablamos y creamos un presupuesto personalizado.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal reveal-d1">
+        <div class="price-icon" aria-hidden="true">🎬</div>
+        <div class="price-tier">Plan</div>
+        <div class="price-name">Básico</div>
+        <ul class="price-ul">
+          <li>Edición limpia de video corto</li>
+          <li>Cortes y ritmo básico</li>
+          <li>Formato listo para subir</li>
+          <li>1 revisión incluida</li>
+        </ul>
+        <p class="price-note">Ideal para empezar a publicar contenido de calidad sin gran inversión.</p>
+      </div>
+      <div class="price-card featured reveal reveal-d2">
+        <div class="price-icon" aria-hidden="true">⚡</div>
+        <div class="price-tier">Plan favorito</div>
+        <div class="price-name">Estándar</div>
+        <ul class="price-ul">
+          <li>Todo lo del plan Básico</li>
+          <li>Subtítulos animados</li>
+          <li>Efectos y música tendencia</li>
+          <li>2 revisiones incluidas</li>
+        </ul>
+        <p class="price-note">El favorito de creadores y marcas personales que quieren destacar en el feed.</p>
+      </div>
+      <div class="price-card reveal reveal-d3">
+        <div class="price-icon" aria-hidden="true">🚀</div>
+        <div class="price-tier">Plan</div>
+        <div class="price-name">Premium</div>
+        <ul class="price-ul">
+          <li>Todo lo del plan Estándar</li>
+          <li>Branding y estilo viral personalizado</li>
+          <li>Overlays, emojis y efectos avanzados</li>
+          <li>Revisiones ilimitadas</li>
+        </ul>
+        <p class="price-note">Para quienes buscan un estilo único, diferenciador y diseñado para la viralidad.</p>
+      </div>
+    </div>
+    <div class="price-cta-row reveal">
+      <span class="price-cta-icon" aria-hidden="true">📋</span>
+      <p>¿Tienes un volumen alto de videos o necesitas algo específico? <strong>Contáctame para un presupuesto personalizado.</strong> Trabajo con paquetes mensuales para creadores y negocios.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section" id="testimonios">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Testimonios</span>
+      <h2 class="sec-title">Lo que dicen mis <em>clientes</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal reveal-d1">
+        <p class="testi-text">Desde que empecé a trabajar con él, mis Reels han triplicado el alcance. El estilo que le da a los videos es exactamente lo que buscaba.</p>
+        <div class="testi-author">Laura M.</div>
+        <div class="testi-role">Creadora de contenido lifestyle</div>
+      </div>
+      <div class="testi reveal reveal-d2">
+        <p class="testi-text">Me ahorra horas cada semana. Entrego el material en bruto y recibo un video listo para publicar que parece producción profesional.</p>
+        <div class="testi-author">Carlos R.</div>
+        <div class="testi-role">Pequeño negocio de moda</div>
+      </div>
+      <div class="testi reveal reveal-d3">
+        <p class="testi-text">Los subtítulos animados que hace son increíbles. Mis TikToks ahora tienen el doble de tiempo de visualización.</p>
+        <div class="testi-author">Ana V.</div>
+        <div class="testi-role">Coach digital</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">FAQ</span>
+      <h2 class="sec-title">Preguntas <em>frecuentes</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal reveal-d1">
+        <h4 class="faq-q">¿Cuánto tarda la entrega de un video?</h4>
+        <p class="faq-a">El plazo habitual es de <strong>24 a 72 horas</strong> según la complejidad. Para proyectos urgentes, consulta disponibilidad y puedo priorizar tu encargo.</p>
+      </div>
+      <div class="faq-item reveal reveal-d2">
+        <h4 class="faq-q">¿En qué formato me envías los videos?</h4>
+        <p class="faq-a">Entrego en <strong>MP4 en alta resolución</strong>, optimizados para cada plataforma: vertical 9:16 para TikTok y Reels, o el formato que necesites.</p>
+      </div>
+      <div class="faq-item reveal reveal-d1">
+        <h4 class="faq-q">¿Cuántas revisiones están incluidas?</h4>
+        <p class="faq-a">Depende del plan: el Básico incluye 1 revisión, el Estándar 2, y el Premium <strong>revisiones ilimitadas</strong>. Siempre busco que quedes 100% satisfecho.</p>
+      </div>
+      <div class="faq-item reveal reveal-d2">
+        <h4 class="faq-q">¿Trabajas con clientes de cualquier nicho?</h4>
+        <p class="faq-a">Sí. He trabajado con lifestyle, moda, fitness, educación, gastronomía y negocios locales. El proceso se adapta a tu sector y audiencia.</p>
+      </div>
+      <div class="faq-item reveal reveal-d1">
+        <h4 class="faq-q">¿Puedo contratar un paquete mensual?</h4>
+        <p class="faq-a">Absolutamente. Tengo <strong>paquetes mensuales</strong> para creadores y negocios que publican de forma constante. Es la opción más económica y cómoda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section cta-final" id="contacto">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="sec-label">Contacto</span>
+      <h2 class="sec-title">¿Listo para que tus videos <em>trabajen por ti?</em></h2>
+      <p class="sec-desc">Da el siguiente paso. Cuéntame tu proyecto y te respondo en menos de 24 horas. Sin compromisos, sin tecnicismos, directo al grano.</p>
+    </div>
+    <div class="cta-btns reveal">
+      <a href="https://wa.me/34600385615?text=Hola%20Efecto%20Bermu%2C%20quiero%20editar%20un%20video" class="btn-gold" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="mailto:hola@efectobermu.com?subject=Consulta%20de%20edici%C3%B3n%20de%20video" class="btn-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+        Enviar email
+      </a>
+      <a href="https://instagram.com/efectobermu" class="btn-wa" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Ver Instagram
+      </a>
+    </div>
+    <div class="cta-tagline">
+      CADA SEGUNDO CUENTA. YO HAGO QUE CADA SEGUNDO VENDA, CONECTE Y RETENGA.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">
+    <img src="/logo.webp" alt="Efecto Bermu" width="100" height="36"/>
+  </div>
+  <div class="foot-motto">Cada segundo cuenta.</div>
+  <nav class="foot-legal" aria-label="Enlaces legales">
+    <a href="/aviso-legal.html">Aviso legal</a>
+    <a href="/privacidad.html">Privacidad</a>
+    <a href="/cookies.html">Cookies</a>
+  </nav>
+  <div class="foot-copy">© 2026 Efecto Bermu. Todos los derechos reservados.</div>
+</footer>
+
+<script src="/script.js" defer></script>
+</body>
+</html>

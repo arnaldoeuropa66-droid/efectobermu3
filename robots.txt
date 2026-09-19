@@ -1,0 +1,17 @@
+# ==========================================================================
+# EFECTO BERMU — robots.txt
+# ==========================================================================
+
+# Permitir indexación general
+User-agent: *
+Allow: /
+
+# Bloquear archivos internos si por error se despliegan
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /README.md
+Disallow: /_headers
+
+# Sitemap
+Sitemap: https://efectobermu.com/sitemap.xml
