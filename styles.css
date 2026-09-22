@@ -1117,3 +1117,237 @@ body > footer .foot-legal a {
     justify-content: center !important;
   }
 }
+/* ==========================================================================
+   PRECIOS - NUEVOS ESTILOS
+   ========================================================================== */
+
+/* Tarjeta base */
+.price-card{
+  background:var(--mid);
+  padding:56px 40px 48px;
+  position:relative;
+  transition:background .4s,transform .4s;
+  display:flex;
+  flex-direction:column;
+}
+.price-card:hover{background:var(--mid2)}
+
+/* Tarjeta destacada */
+.price-card.featured{
+  background:#1e1e1e;
+  border-top:2px solid var(--gold);
+  transform:translateY(-8px);
+  box-shadow:0 20px 60px rgba(201,168,76,.15);
+}
+.price-card.featured:hover{
+  transform:translateY(-12px);
+}
+
+/* Badge "Recomendado" */
+.price-badge{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:var(--gold);
+  color:var(--black);
+  font-size:.6rem;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  padding:6px 14px;
+  border-radius:2px;
+}
+
+/* Icono SVG */
+.price-icon{
+  width:48px;
+  height:48px;
+  color:var(--gold);
+  margin-bottom:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.price-icon svg{
+  width:100%;
+  height:100%;
+}
+
+/* Meta info */
+.price-tier{
+  font-size:.62rem;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:12px;
+}
+.price-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;
+  font-weight:400;
+  color:var(--white);
+  margin-bottom:20px;
+  line-height:1.1;
+}
+
+/* Precio grande */
+.price-amount{
+  display:flex;
+  align-items:baseline;
+  gap:4px;
+  margin-bottom:6px;
+}
+.price-number{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.5rem;
+  font-weight:300;
+  color:var(--gold);
+  line-height:1;
+}
+.price-currency{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;
+  font-weight:300;
+  color:var(--gold);
+}
+.price-meta{
+  font-size:.72rem;
+  color:var(--muted);
+  letter-spacing:.05em;
+  margin-bottom:28px;
+  padding-bottom:28px;
+  border-bottom:1px solid rgba(201,168,76,.15);
+}
+
+/* Lista */
+.price-ul{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:28px;
+  flex-grow:1;
+}
+.price-ul li{
+  color:var(--muted);
+  font-size:.85rem;
+  line-height:1.6;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+.price-ul li::before{
+  content:'✦';
+  color:var(--gold);
+  font-size:.5rem;
+  flex-shrink:0;
+  margin-top:6px;
+}
+
+/* Nota */
+.price-note{
+  font-size:.8rem;
+  color:var(--muted);
+  line-height:1.7;
+  font-style:italic;
+  margin-bottom:28px;
+  padding-top:20px;
+  border-top:1px solid rgba(201,168,76,.1);
+}
+
+/* Botón dentro de la tarjeta */
+.btn-price{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px 24px;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--gold);
+  border:1px solid var(--gold);
+  background:transparent;
+  transition:all .3s;
+  text-align:center;
+  margin-top:auto;
+}
+.btn-price:hover{
+  background:var(--gold);
+  color:var(--black);
+}
+.btn-price-featured{
+  background:var(--gold);
+  color:var(--black);
+}
+.btn-price-featured:hover{
+  background:var(--gold-l);
+  border-color:var(--gold-l);
+}
+
+/* Fila mantenimiento */
+.price-cta-row{
+  margin-top:2px;
+  background:rgba(201,168,76,.06);
+  border:1px solid rgba(201,168,76,.15);
+  padding:32px 40px;
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.price-cta-icon{
+  color:var(--gold);
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+}
+.price-cta-row p{
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.7;
+  flex-grow:1;
+}
+.price-cta-row strong{color:var(--white)}
+
+/* Botón outline de la fila mantenimiento */
+.btn-price-outline{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 32px;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--gold);
+  border:1px solid var(--gold);
+  background:transparent;
+  transition:all .3s;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.btn-price-outline:hover{
+  background:var(--gold);
+  color:var(--black);
+}
+
+/* Responsive */
+@media (max-width:1100px){
+  .price-number{font-size:3rem}
+  .price-name{font-size:1.7rem}
+}
+@media (max-width:1000px){
+  .price-card{padding:48px 32px 40px}
+  .price-card.featured{transform:none}
+  .price-card.featured:hover{transform:none}
+  .price-cta-row{flex-direction:column;text-align:center;gap:20px;padding:28px}
+  .btn-price-outline{width:100%}
+}
+@media (max-width:560px){
+  .price-number{font-size:2.6rem}
+  .price-currency{font-size:1.5rem}
+  .price-name{font-size:1.5rem}
+  .price-card{padding:40px 24px 36px}
+}
