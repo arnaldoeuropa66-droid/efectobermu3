@@ -1351,3 +1351,105 @@ body > footer .foot-legal a {
   .price-name{font-size:1.5rem}
   .price-card{padding:40px 24px 36px}
 }
+/* ==========================================================================
+   FIX: PRECIOS EN MÓVIL - reducir espaciado
+   ========================================================================== */
+
+@media (max-width: 1000px) {
+  /* Reducir padding general de las tarjetas */
+  .price-card {
+    padding: 32px 24px 28px;
+  }
+
+  /* Reducir espacio del icono */
+  .price-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 16px;
+  }
+
+  /* Reducir espacio entre nombre y precio */
+  .price-name {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  /* Reducir tamaño del precio para que no sature */
+  .price-number {
+    font-size: 2.8rem;
+  }
+  .price-currency {
+    font-size: 1.6rem;
+  }
+
+  /* Reducir margen del "precio meta" (Página única · Entrega...) */
+  .price-amount {
+    margin-bottom: 4px;
+  }
+  .price-meta {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Reducir espacio entre los items de la lista */
+  .price-ul {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .price-ul li {
+    font-size: .82rem;
+  }
+
+  /* Reducir espacio de la nota */
+  .price-note {
+    margin-bottom: 20px;
+    padding-top: 16px;
+  }
+
+  /* Botón un poco más compacto */
+  .btn-price {
+    padding: 14px 20px;
+  }
+}
+
+/* Móvil pequeño (más compacto aún) */
+@media (max-width: 560px) {
+  .price-card {
+    padding: 28px 20px 24px;
+  }
+
+  .price-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+  }
+
+  .price-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .price-number {
+    font-size: 2.4rem;
+  }
+  .price-currency {
+    font-size: 1.4rem;
+  }
+
+  .price-meta {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    font-size: .68rem;
+  }
+
+  .price-ul {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .price-ul li {
+    font-size: .8rem;
+  }
+  .price-ul li::before {
+    margin-top: 5px;
+  }
+}
